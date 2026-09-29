@@ -5,10 +5,12 @@
 <title>design100 — 从 Figma，到更清晰的 AI 交付</title>
 <meta name="description" content="design100 将 Figma 选区整理为设计数据、素材和验收工具。下载测试版插件，了解安装与配对步骤。">
 <link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="zh-CN" href="https://sanxiansheng.github.io/design100/"><link rel="alternate" hreflang="en" href="https://sanxiansheng.github.io/design100/en.html">
+<style>.language-switch{display:flex;align-items:center;gap:9px;font-size:14px;white-space:nowrap}.language-switch a{padding:8px 0}.language-switch [aria-current]{color:var(--purple);font-weight:700}.language-switch span{color:#aaa}html[lang="en"] h1{font-size:clamp(36px,5vw,68px);letter-spacing:-1.8px}html[lang="en"] .flow-stage{min-width:0}html[lang="en"] .file-row{flex-wrap:wrap}@media(max-width:850px){.nav nav{display:none}}@media(max-width:420px){.nav{flex-wrap:wrap;height:auto;padding-block:18px;gap:10px}.nav-download{display:none}.language-switch{margin-left:auto}}@media(max-width:700px){html[lang="en"] h1{font-size:39px}}</style>
 </head>
 <body>
 <a class="skip" href="#main">跳转到内容</a>
-<header class="nav wrap"><a class="brand" href="#" aria-label="design100 首页"><img src="icon.png" width="32" height="32" alt="">design100</a><nav aria-label="主导航"><a href="#features">功能</a><a href="#guide">安装指南</a><a href="#faq">常见问题</a></nav><a class="nav-download" href="#download">获取插件 <span aria-hidden="true">↗</span></a></header>
+<header class="nav wrap"><a class="brand" href="#" aria-label="design100 首页"><img src="icon.png" width="32" height="32" alt="">design100</a><nav aria-label="主导航"><a href="#features">功能</a><a href="#guide">安装指南</a><a href="#faq">常见问题</a></nav><div class="language-switch" aria-label="语言选择"><a href="index.html" lang="zh-CN" hreflang="zh-CN" aria-current="page">中文</a><span aria-hidden="true">/</span><a href="en.html" lang="en" hreflang="en">English</a></div><a class="nav-download" href="#download">获取插件 <span aria-hidden="true">↗</span></a></header>
 <main id="main">
 <section class="hero wrap">
 <div class="eyebrow"><span class="tag">PUBLIC BETA</span> FOR FIGMA & MAC</div>
@@ -25,4 +27,5 @@
 <section id="faq" class="wrap section faq-section"><div class="section-heading"><div class="eyebrow">GOOD TO KNOW</div><h2>开始之前，你可能想知道。</h2></div><div class="faq"><details><summary>需要先在 Figma 社区安装吗？</summary><p>当前网站提供手动导入的测试版安装包，可通过 Figma 桌面端的 Development 入口安装。社区版本的公开状态尚未确认，请使用本页下载和安装说明。</p></details><details><summary>它会直接生成网页代码吗？</summary><p>不会。design100 整理设计数据、素材、还原说明与验收工具。你需要将导出的内容交给自己的 AI 开发工具，完成前端实现。</p></details><details><summary>为什么需要 Mac 桌面端？Windows 可以使用吗？</summary><p>当前导出操作由 design100 Mac 桌面端发起，Figma 插件负责读取选区并生成设计包。当前配套流程需要 Mac，暂未提供 Windows 桌面端。</p></details><details><summary>配对后一直连接中，或导出超时怎么办？</summary><p>确认桌面端已经启动，重新复制配对码，关闭并重新运行 Figma 插件；如系统提示本地网络权限，请允许 Figma 访问。导出超时仍是当前测试版的已知问题，可尝试较小选区，并将错误提示发送到支持邮箱。请勿发送配对码或敏感设计资料。</p></details><details><summary>我的设计数据会去哪里？</summary><p>插件通过本机 localhost:38472 与桌面端交换选区数据和预览，导出包包含所选设计及素材。插件本身不调用远程 AI；将导出包分享给第三方 AI 时，由你决定分享范围。详细说明请阅读<a href="https://sanxiansheng.github.io/design100-privacy/">产品隐私政策</a>。</p></details></div></section>
 <section class="wrap support"><div><h2>让下一次交付，更清晰。</h2><p>遇到问题或想获取 Mac 测试版，欢迎联系。</p></div><a href="mailto:530991427@qq.com" class="text-link">530991427@qq.com <span aria-hidden="true">↗</span></a></section>
 </main><footer class="wrap"><a class="brand" href="#"><img src="icon.png" alt="" width="26" height="26">design100</a><span>© 2026 design100</span><div><a href="https://sanxiansheng.github.io/design100-privacy/">隐私政策</a><a href="mailto:530991427@qq.com">联系支持</a></div></footer>
+<script>document.querySelectorAll(".language-switch a").forEach(function(link){link.addEventListener("click",function(){link.hash=window.location.hash;});});</script>
 </body></html>
